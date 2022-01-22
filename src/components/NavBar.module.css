@@ -16,8 +16,10 @@ img.logo {
 }
 
 ul.navLinks {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0;
+    width: clamp(200px, 40%, 600px);
+
 
     display: flex;
     flex-direction: row;
@@ -25,4 +27,18 @@ ul.navLinks {
     justify-content: space-between;
     
     list-style: none;
+}
+
+ul.navLinks > li {
+
+}
+
+ul.navLinks > li > a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+}
+
+ul.navLinks > li > a:hover {
+    color: var(--dark-grayish-blue);
 }
