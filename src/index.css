@@ -9,6 +9,7 @@
   
   --dark-grayish-blue: hsl(227, 12%, 61%);
   --very-dark-blue: hsl(233, 12%, 13%);
+  --faded-red: hsl(13, 100%, 75%);
   --very-pale-red: hsl(13, 100%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
 }

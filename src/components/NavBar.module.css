@@ -1,5 +1,5 @@
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100px;
     padding: 15px;
 
@@ -29,14 +29,10 @@ ul.navLinks {
     list-style: none;
 }
 
-ul.navLinks > li {
-
-}
-
 ul.navLinks > li > a {
     text-decoration: none;
     color: var(--dark-blue);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 ul.navLinks > li > a:hover {
