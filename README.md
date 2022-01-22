@@ -1,7 +1,16 @@
 # Overview
-This is my attempt at the front-end web dev challenge ['Manage Landing Page' from Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5/hub/manage-landing-page-W2koFkhe5). Below are the challenge brief and style guide provided by Frontend Mentor, as well as my own reflections on what I've learned completing this project. Reference screenshots are included in the `/designs` folder.
+This is my attempt at the front-end web dev challenge ['Manage Landing Page' from Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5/hub/manage-landing-page-W2koFkhe5). Below are the challenge brief and style guide provided by Frontend Mentor, as well as my own reflections on what I've learned completing this project.
 
 # Brief
+Build a landing page based on a given design (screenshots found in `/designs` folder).
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See all testimonials in a horizontal slider
+- Receive an error message when the newsletter sign up `form` is submitted if:
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
 # Front-end Style Guide
 ## Layout
@@ -43,3 +52,6 @@ For the social icons, you can use the icons provided or a font icon library. Som
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+---
+# Jeff's Notes
