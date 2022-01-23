@@ -1,0 +1,48 @@
+.container {
+    /* border: 1px solid red; */
+    margin: 4% 0 0 0;
+    min-height: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.usp {
+    /* border: 1px solid red;  */
+    width: 35%;
+}
+
+.usp > h1 {
+    /* border: 1px solid red; */
+    margin: 5% 0 6%;
+    width: 90%;
+
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+}
+
+.usp > p {
+    width: 70%;
+}
+
+.features{
+    width: 35%;
+}
+
+.features > ol {
+    margin: 0;
+    padding: 0;
+    counter-reset: list-number;
+}
+
+.features > ol > li {
+    border: 1px solid red;
+    list-style: none;
+
+    counter-increment: list-number;
+
+    display: flex;
+}
