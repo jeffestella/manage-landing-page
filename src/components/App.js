@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './NavBar';
 import SectionHero from './SectionHero';
 import SectionFeatures from './SectionFeatures';
+import SectionTestimonials from './SectionTestimonials';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <NavBar />
       <SectionHero />
       <SectionFeatures />
+      <SectionTestimonials />
     </div>
   );
 }
