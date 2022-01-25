@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import SectionHero from './SectionHero';
 import SectionFeatures from './SectionFeatures';
 import SectionTestimonials from './SectionTestimonials';
+import SectionCTA from './SectionCTA';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <SectionHero />
       <SectionFeatures />
       <SectionTestimonials />
+      <SectionCTA />
     </div>
   );
 }

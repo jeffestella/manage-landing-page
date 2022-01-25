@@ -17,3 +17,13 @@ button.container {
 button.container:hover {
     background-color: var(--faded-red);
 }
+
+button.container.inverted {
+    background-color: white;
+    color: var(--bright-red);
+    box-shadow: none;
+}
+
+button.container.inverted:hover {
+    color: var(--faded-red);
+}

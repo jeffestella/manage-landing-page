@@ -1,0 +1,23 @@
+.container {
+    min-height: 175px;
+    position: relative;
+    /* background: linear-gradient(hsl(12, 88%, 59%, 0.7), hsl(12, 88%, 59%, 0.7), url('../assets/bg-tablet-pattern.svg')); */
+    background-color: var(--bright-red);
+    /* background-image: url('../assets/bg-tablet-pattern.svg'); */
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.content > h1 {
+    border: 1px solid white;
+    width: 30%;
+
+    color: white;
+    font-size: 2rem;
+
+}
