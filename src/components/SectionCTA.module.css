@@ -1,23 +1,38 @@
 .container {
-    min-height: 175px;
+    min-height: 200px;
     position: relative;
-    /* background: linear-gradient(hsl(12, 88%, 59%, 0.7), hsl(12, 88%, 59%, 0.7), url('../assets/bg-tablet-pattern.svg')); */
     background-color: var(--bright-red);
-    /* background-image: url('../assets/bg-tablet-pattern.svg'); */
+    
+    display: flex;
+    justify-content: center;
 }
 
+
+.container::before {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-image: url('../assets/bg-tablet-pattern.svg');
+    opacity: 0.1;
+}
 .content {
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
 }
 
 .content > h1 {
-    border: 1px solid white;
-    width: 30%;
+    /* border: 1px solid white; */
+    width: 40%;
 
     color: white;
-    font-size: 2rem;
+    font-size: 2.3rem;
 
 }
