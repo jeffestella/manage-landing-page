@@ -1,10 +1,10 @@
 .container {
     min-height: 200px;
     position: relative;
-    background-color: var(--bright-red);
     
     display: flex;
     justify-content: center;
+    background-color: var(--bright-red);
 }
 
 
@@ -16,9 +16,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
     background-image: url('../assets/bg-tablet-pattern.svg');
     opacity: 0.1;
+    pointer-events: none;
 }
 .content {
     width: 80%;
