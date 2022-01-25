@@ -6,6 +6,7 @@ import SectionHero from './SectionHero';
 import SectionFeatures from './SectionFeatures';
 import SectionTestimonials from './SectionTestimonials';
 import SectionCTA from './SectionCTA';
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <SectionFeatures />
       <SectionTestimonials />
       <SectionCTA />
+      <Footer />
     </div>
   );
 }
