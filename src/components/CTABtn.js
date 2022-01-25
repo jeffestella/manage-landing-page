@@ -1,15 +1,21 @@
 import React from 'react';
 import ctaBtnStyles from './CTABtn.module.css';
 
-const CTABtn = ({ invertColor }) => {
+const CTABtn = ({ text, invertColor, small }) => {
     return (
         <button className={`${ctaBtnStyles.container}
             ${
                 invertColor ? 
                 ctaBtnStyles.inverted :
                 ''
-            }`}>
-            Get Started
+            }
+            ${
+                small ?
+                ctaBtnStyles.small :
+                ''
+            }
+        `}>
+            {text ? text : 'Get Started'}
         </button>
     );
 }

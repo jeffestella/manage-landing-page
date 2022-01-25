@@ -27,3 +27,9 @@ button.container.inverted {
 button.container.inverted:hover {
     color: var(--faded-red);
 }
+
+button.container.small {
+    box-shadow: none;
+    width: 70px;
+    height: 45px;
+}
