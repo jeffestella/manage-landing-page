@@ -17,8 +17,9 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: url('../assets/bg-tablet-pattern.svg');
-    opacity: 0.1;
+    background-image: url('../assets/bg-simplify-section-desktop.svg');
+
+    /* opacity: 0.9; */
     pointer-events: none;
 }
 .content {

@@ -73,12 +73,12 @@
 
 .right {
     /* border: 1px solid white; */
-    height: 200px;
+    height: 145px;
     width: 20%;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
@@ -90,10 +90,32 @@
     border-style: solid;
 }
 
+.right > form > input:not(:focus):not(:placeholder-shown):invalid {
+    color: var(--bright-red);
+    border: 1px solid var(--bright-red);
+}
+
+.right > form > input ~ p.error {
+    visibility: hidden;
+}
+
+.right > form > input:not(:focus):not(:placeholder-shown):invalid ~ p.error {
+    color: var(--bright-red);
+    visibility: visible;
+}
+
 .right > form > input::placeholder {
     color: var(--dark-grayish-blue);
 }
 
+.right > form > p {
+    margin: 0;
+    padding: 0;
+    color: var(--bright-red);
+    font-size: 0.7rem;
+    font-style: italic;
+
+}
 .right > p {
     font-size: 0.8rem;
 

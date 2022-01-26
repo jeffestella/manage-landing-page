@@ -75,6 +75,7 @@ const Footer = () => {
                 <form>
                     <input type="email" placeholder="  Updates in your inbox..."></input>
                     <CTABtn small={true} text="Go" />
+                    <p className={footerStyles.error}>Please insert a valid email</p>
                 </form>
                 <p>Copyright 2020. All Rights Reserved.</p>
             </div>
