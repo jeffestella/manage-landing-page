@@ -28,6 +28,7 @@
     width: 70%;
 }
 
+
 .left > ul {
     /* border: 1px solid white; */
     margin: 0;
@@ -38,6 +39,10 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.left > ul > li img:hover {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(100%) saturate(488%) hue-rotate(327deg) brightness(96%) contrast(98%);
 }
 
 .middle {
