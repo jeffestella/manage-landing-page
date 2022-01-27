@@ -2,4 +2,15 @@
   max-width: 1500px;
   min-height: 100vh;
   background-image: url(../assets/bg-tablet-pattern.svg);
+  
+  /* background-image: url(../assets/bg-tablet-pattern.svg) top right no-repeat; */
+  background-repeat: no-repeat;
+  background-position: right -25% top -10%; 
+}
+
+.whiteBgContent {
+  background-image: url(../assets/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: left -75% bottom -30%; 
+
 }
