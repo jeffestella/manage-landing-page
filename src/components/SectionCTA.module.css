@@ -1,5 +1,5 @@
 .container {
-    min-height: 200px;
+    min-height: 210px;
     position: relative;
     
     display: flex;
@@ -18,6 +18,9 @@
     left: 0;
     z-index: 1;
     background-image: url('../assets/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    /* background-position: 350px -150px;  */
+    background-position: 20vw 100%;
 
     /* opacity: 0.9; */
     pointer-events: none;
