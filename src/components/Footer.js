@@ -3,7 +3,8 @@ import footerStyles from './Footer.module.css';
 
 import CTABtn from './CTABtn';
 
-import logo from '../assets/logo.svg';
+// import logo from '../assets/logo.svg';
+import logoWhite from '../assets/logo-white.svg';
 import iconFacebook from '../assets/icon-facebook.svg';
 import iconYoutube from '../assets/icon-youtube.svg';
 import iconTwitter from '../assets/icon-twitter.svg';
@@ -55,7 +56,8 @@ const Footer = () => {
     return (
         <footer className={footerStyles.container}>
             <div className={footerStyles.left} >
-                <img src={logo} alt="logo" />
+                {/* <img src={logo} alt="logo" /> */}
+                <img src={logoWhite} alt="logo" />
                 <ul>
                     {socialMenu}
                 </ul>
