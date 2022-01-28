@@ -11,6 +11,6 @@
 .whiteBgContent {
   background-image: url(../assets/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
-  background-position: left -75% bottom -30%; 
+  background-position: left -75% bottom 15%; 
 
 }
