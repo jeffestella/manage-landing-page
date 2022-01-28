@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     background-color: var(--very-dark-blue);
@@ -46,13 +46,15 @@
 }
 
 .middle {
-    width: 30%;
+    margin: 0 5%;
+    width: 40%;
+    /* height: 300px; */
 }
 
 .middle > ul {
     /* border: 1px solid red; */
     /* width: 50%; */
-    max-height: 175px;
+    max-height: 200px;
     margin: 0;
     padding: 0;
     /* max-height: 100%; */
