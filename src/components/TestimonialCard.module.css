@@ -1,50 +1,61 @@
 .container {
     border: 1px solid red;
-    --card-width: 500px;
+    --card-width: 600px;
     margin: calc(-1 * var(--img-width)/2) 0 0 0;
     width: var(--card-width);
-    height: calc(var(--card-width)/2);
+    /* min-height: calc(var(--card-width)/2); */
     position: relative;
-    
 }
 
-.text {
-    /* border: 1px solid blue; */
-    padding: 60px 0 10px;
-    position: absolute;
-    top: 0;
-    height: calc(var(--card-width/2));
+.content {
+    /* background-color: var(--faded-red); */
+
+    padding: 20px 0 0;
+    height: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 
-    background-color: var(--very-light-gray);
-    
+    /* position: relative; */
+
 }
 
-.container > img {
+
+.content img {
     --img-width: 65px;
     margin: 0;
     padding: 0;
     width: var(--img-width);
-    position: absolute;
-    /* top: -32.5px; */
-    top: calc(-1 * var(--img-width)/2);
-    left: calc(50% - var(--img-width)/2);
-
+    position: relative;
+    top: calc(var(--img-width)/2);
     z-index: 1;
 }
 
+.text {
+
+    background-color: var(--very-light-gray);
+    padding: 50px 0 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .text > h1 {
+    border: 1px solid green;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 
 .text > p {
+    border: 1px solid green;
+    width: 80%;
     margin: 0;
-    padding: 4%;
+    padding: 20px;
     text-align: center;
 }
