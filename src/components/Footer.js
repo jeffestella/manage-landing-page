@@ -56,6 +56,7 @@ const Footer = () => {
     return (
         <footer className={footerStyles.container}>
             <div className={footerStyles.left} >
+                <p>Copyright 2020. All Rights Reserved.</p>
                 {/* <img src={logo} alt="logo" /> */}
                 <img src={logoWhite} alt="logo" />
                 <ul>
@@ -64,13 +65,13 @@ const Footer = () => {
             </div>
             <nav className={footerStyles.middle}>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Pricing</a></li>
-                    <li><a href="/">Products</a></li>
-                    <li><a href="/">About Us</a></li>
-                    <li><a href="/">Careers</a></li>
-                    <li><a href="/">Community</a></li>
-                    <li><a href="/">Privacy Policy</a></li>
+                    <li><a href="/" key="home">Home</a></li>
+                    <li><a href="/" key="pricing">Pricing</a></li>
+                    <li><a href="/" key="product">Products</a></li>
+                    <li><a href="/" key="about">About Us</a></li>
+                    <li><a href="/" key="career">Careers</a></li>
+                    <li><a href="/" key="community">Community</a></li>
+                    <li><a href="/" key="privacy">Privacy Policy</a></li>
                 </ul>
             </nav>
             <div className={footerStyles.right}>
