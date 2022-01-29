@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     /* background-position: 350px -150px;  */
     background-position: 20vw 100%;
-
+    
     /* opacity: 0.9; */
     pointer-events: none;
 }
@@ -36,10 +36,10 @@
 .content > h1 {
     /* border: 1px solid white; */
     width: 40%;
-
+    
     color: white;
     font-size: 2.3rem;
-
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -47,6 +47,11 @@
         height: 350px;
     }
     
+    .container::before {
+        background-image: url('../assets/bg-simplify-section-mobile.svg');
+        background-size: 22%;
+        background-position: left 0 top 50%;
+    }
     .content {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -56,10 +61,10 @@
     }
 
     .content > h1 {
-        width: 75%;
+        width: 90%;
         line-height: 3rem;
 
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
