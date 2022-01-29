@@ -33,3 +33,9 @@ button.container.small {
     width: 70px;
     height: 45px;
 }
+
+@media screen and (max-width: 375px) {
+    button.mobileHidden {
+        display: none;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ctaBtnStyles from './CTABtn.module.css';
 
-const CTABtn = ({ text, invertColor, small }) => {
+const CTABtn = ({ text, invertColor, small, mobileHidden }) => {
     return (
         <button className={`${ctaBtnStyles.container}
             ${
@@ -12,6 +12,11 @@ const CTABtn = ({ text, invertColor, small }) => {
             ${
                 small ?
                 ctaBtnStyles.small :
+                ''
+            }
+            ${
+                mobileHidden ? 
+                ctaBtnStyles.mobileHidden :
                 ''
             }
         `}>
