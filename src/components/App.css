@@ -14,3 +14,14 @@
   background-position: left -75% bottom 15%; 
 
 }
+
+@media screen and (max-width: 375px) {
+  .App {
+    background-size: 500px;
+    background-position: right 125% top -5%;
+  }
+
+  .whiteBgContent {
+    background-image: none;
+  }
+}

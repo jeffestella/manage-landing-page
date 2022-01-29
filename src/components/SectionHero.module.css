@@ -44,9 +44,15 @@
 @media screen and (max-width: 375px) {
     .container {
         /* border: 1px solid red; */
+        padding: 0 0 100px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center; 
+
+        background-image: url(../assets/bg-tablet-pattern.svg);
+        background-size: 325px;
+        background-repeat: no-repeat;
+        background-position: right -400% bottom 0;
     }
 
     .graphics,
