@@ -42,12 +42,11 @@ const Footer = () => {
     
     const socialMenu = socialLinks.map( (link) => {
         return (
-            <li>
+            <li key={link.alt}>
                 <a href={link.url}>
                     <img 
                         src={link.icon} 
                         alt={link.alt}
-                        key={link.alt}
                     />
                 </a>
             </li>

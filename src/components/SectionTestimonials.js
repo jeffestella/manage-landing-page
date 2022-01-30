@@ -1,5 +1,6 @@
 import React from 'react';
 import sectionTestimonialsStyles from './SectionTestimonials.module.css';
+import Carousel from 'react-elastic-carousel';
 
 import avatarAli from '../assets/avatar-ali.png';
 import avatarAnisha from '../assets/avatar-anisha.png';
@@ -46,17 +47,30 @@ const carouselContent = testimonials.map( (testimonial) => {
             name={testimonial.name}
             photo={testimonial.photo}
             blurb={testimonial.blurb}
+            key={testimonial.title}
         />
     );
 })
 
 const SectionTestimonials = () => {
+    const breakPoints = [
+        {width: 1, itemsToShow: 1},
+        {width: 768, itemsToShow: 3}
+    ];
+
     return (
         <section className={sectionTestimonialsStyles.container}>
             <h1>What they've said</h1>
-            <div className={sectionTestimonialsStyles.carousel}>
+            {/* <div className={sectionTestimonialsStyles.carousel}>
                 {carouselContent}
-            </div>
+            </div> */}
+            <Carousel 
+                showArrows={false}
+                focusOnSelect={true}
+                breakPoints={breakPoints}
+            >
+                {carouselContent}
+            </Carousel>
             <CTABtn />
         </section>
     );

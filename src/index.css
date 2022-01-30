@@ -34,3 +34,27 @@ h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+/*For Carousel component in SectionTestimonials*/
+.rec.rec-pagination {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .rec.rec-pagination {
+    display: flex;
+    margin: 0 0 10%;
+  }
+
+  button.rec.rec-dot{
+    border: 1.5px solid var(--bright-red);
+    box-shadow: none;
+    margin: 3px
+  }
+
+  button.rec.rec-dot_active {
+    background-color: var(--bright-red);
+    box-shadow: var(--bright-red);
+
+  }
+} 
