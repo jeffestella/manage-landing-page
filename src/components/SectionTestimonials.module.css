@@ -31,3 +31,14 @@
     overflow-y:visible; 
 
 }
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+    .container > h1 {
+        font-size: 2rem;
+        margin: 0 0 8%;
+    }
+}

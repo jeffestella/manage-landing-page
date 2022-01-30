@@ -43,3 +43,9 @@
 
     font-size: 0.95em;
 }
+
+@media screen and (max-width: 375px) {
+    .container {
+
+    }
+}
