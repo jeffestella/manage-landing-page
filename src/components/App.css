@@ -6,6 +6,8 @@
   /* background-image: url(../assets/bg-tablet-pattern.svg) top right no-repeat; */
   background-repeat: no-repeat;
   background-position: right -25% top -10%; 
+
+  overflow: hidden;
 }
 
 .whiteBgContent {
