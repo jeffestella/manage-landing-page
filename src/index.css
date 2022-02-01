@@ -52,8 +52,12 @@ h1 {
   background-color: var(--bright-red);
   box-shadow: none;
   color: white;
+  visibility: hidden;
 }
 
+.rec.rec-carousel:hover > button.rec.rec-arrow {
+  visibility: visible;
+}
 .rec.rec-carousel > button.rec.rec-arrow:hover {
   background-color: var(--faded-red);
 }
@@ -64,20 +68,19 @@ h1 {
 }
 
 .rec.rec-carousel > button.rec.rec-arrow.rec-arrow-left {
-  visibility: hidden;
   left: 1%;
 }
 
 .rec.rec-carousel > button.rec.rec-arrow.rec-arrow-right {
-  visibility: hidden;
   right: 1%;
 }
 
-.rec.rec-carousel:hover > button.rec.rec-arrow {
-  visibility: visible;
-}
 
 @media screen and (max-width: 375px) {
+  .rec.rec-arrow {
+    display: none;
+  }
+
   .rec.rec-pagination {
     display: flex;
     margin: 0 0 10%;
