@@ -40,6 +40,43 @@ h1 {
   display: none;
 }
 
+.rec.rec-carousel {
+  position: relative;
+  margin: 0 0 5%;
+}
+
+.rec.rec-carousel > button.rec.rec-arrow {
+  /* border: 1px solid var(--dark-grayish-blue); */
+  position: absolute;
+  z-index: 2;
+  background-color: var(--bright-red);
+  box-shadow: none;
+  color: white;
+}
+
+.rec.rec-carousel > button.rec.rec-arrow:hover {
+  background-color: var(--faded-red);
+}
+
+.rec.rec-carousel:hover > button.rec.rec-arrow:disabled {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.rec.rec-carousel > button.rec.rec-arrow.rec-arrow-left {
+  visibility: hidden;
+  left: 1%;
+}
+
+.rec.rec-carousel > button.rec.rec-arrow.rec-arrow-right {
+  visibility: hidden;
+  right: 1%;
+}
+
+.rec.rec-carousel:hover > button.rec.rec-arrow {
+  visibility: visible;
+}
+
 @media screen and (max-width: 375px) {
   .rec.rec-pagination {
     display: flex;
@@ -57,4 +94,5 @@ h1 {
     box-shadow: var(--bright-red);
 
   }
+
 } 

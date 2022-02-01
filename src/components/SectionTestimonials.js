@@ -55,7 +55,7 @@ const carouselContent = testimonials.map( (testimonial) => {
 const SectionTestimonials = () => {
     const breakPoints = [
         {width: 1, itemsToShow: 1},
-        {width: 768, itemsToShow: 3}
+        {width: 768, itemsToShow: 2}
     ];
 
     return (
@@ -65,7 +65,7 @@ const SectionTestimonials = () => {
                 {carouselContent}
             </div> */}
             <Carousel 
-                showArrows={false}
+                // disableArrowsOnEnd={false}
                 focusOnSelect={true}
                 breakPoints={breakPoints}
             >
