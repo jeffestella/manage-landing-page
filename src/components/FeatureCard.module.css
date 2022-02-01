@@ -8,7 +8,7 @@
     justify-content: flex-start;
 }
 
-.index {
+.container > .index {
     margin: 0 25px 0 0;
     width: 215px;
     height: 35px;
@@ -32,6 +32,10 @@
 
 }
 
+.text > .index {
+    display: none;
+}
+
 .text > h1 {
     margin: 1% 0 4%;
     padding: 0;
@@ -46,6 +50,70 @@
 
 @media screen and (max-width: 375px) {
     .container {
+        margin: 0 0 5%;
+        padding: 0;
+    }
+    .container > .index {
+        display: none;
+    }
 
+    .text > .index {
+        /* border: 1px solid red; */
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    
+    .text > .index > p {
+        width: 90px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-weight: bold;
+        background-color: var(--bright-red);
+
+        position: relative;
+        left: 10px;
+    }
+
+    .text > .index > h1 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-size: 1rem;
+        color: var(--very-dark-blue);
+        background-color: var(--very-pale-red);
+        position: relative;
+        z-index: -1;
+    }
+    
+    .text > .index > h1::before {
+        height: 100%;
+        width: 20px;
+        content: "";
+        background-color: var(--very-pale-red);
+
+        position: relative;
+        left: -20px;
+        z-index: -2;
+
+    }
+
+    .text > h1 {
+        display: none;
+    }
+
+    .text > p {
+        font-size: 0.9rem;
+        padding: 0 13px;
+        line-height: 1.8rem;
     }
 }

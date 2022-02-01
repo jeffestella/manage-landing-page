@@ -10,6 +10,12 @@ const FeatureCard = ({ index, heading, blurb }) => {
                 index}
             </div>
             <div className={featureCardStyles.text}>
+                <div className={featureCardStyles.index}>
+                    <p>{index < 10 ?
+                        `0${index + 1}` :
+                        index}</p>
+                    <h1>{heading}</h1>
+                </div>
                 <h1>{heading}</h1>
                 <p>{blurb}</p>
             </div>

@@ -15,7 +15,7 @@ const testimonials = [
         name: "Anisha Li",
         title: "anisha-li",
         photo: avatarAnisha,
-        blurb: `"Manage has supercharged our team\'s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."`
+        blurb: `"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."`
         
     },
     {
@@ -29,7 +29,7 @@ const testimonials = [
         name: "Richard Watts",
         title: "richard-watts",
         photo: avatarRichard,
-        blurb: `"Managed allows us to provide structure and process. It keeps us organized and focused. I can\'t stop recommending them to everyone I talk to!"`
+        blurb: `"Managed allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"`
         
     },
     {
